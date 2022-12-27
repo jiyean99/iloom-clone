@@ -51,7 +51,17 @@ $(function(){
         num = prev;
     }
 
-    setInterval(nextSlide, 4000);
-    $(".next-btn").click(nextSlide);
-    $(".prev-btn").click(prevSlide);
+    function autoPlay(){
+        setInterval(function(){
+            nextSlide()
+        },4000)
+    }
+
+    // setInterval(nextSlide, 4000);
+    autoPlay();
+
+    $(".next-btn").stop().click(nextSlide);
+    $(".prev-btn").stop().click(prevSlide);
+    
 })
+

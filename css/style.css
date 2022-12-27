@@ -15,6 +15,7 @@ body{
     font-family:'Noto Sans KR', sans-serif ;
     font-size: 0.8rem;
     color: #333;
+    background-color: #fff;
 }
 li{
     list-style: none;
@@ -535,8 +536,12 @@ section article{
     display: inline-block;
 }
 .cont4-txt2 div h5{
+    font-size: 13px;
     margin: 0 5px;
     font-weight: 100;
+}
+.cont4-txt2 div h5:nth-of-type(1){
+    font-weight: bold;
 }
 .container4{
     width: 1200px;
